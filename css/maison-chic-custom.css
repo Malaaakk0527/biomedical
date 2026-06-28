@@ -549,8 +549,8 @@ body #page-container .et_pb_section .et_pb_fullwidth_header_0 .et_pb_button_one.
 
 /* Section À propos */
 .et_pb_row_3 {
-  padding-top: 60px !important;
-  padding-bottom: 20px !important;
+  padding-top: 40px !important;
+  padding-bottom: 10px !important;
 }
 .et_pb_text_2 {
   text-align: center !important;
@@ -562,9 +562,9 @@ body #page-container .et_pb_section .et_pb_fullwidth_header_0 .et_pb_button_one.
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: #fff;
-  margin: 0 0 24px;
+  margin: 0 0 12px;
   text-align: center;
-  padding-bottom: 14px;
+  padding-bottom: 10px;
   border-bottom: 3px solid var(--mc-gold);
   display: inline-block;
 }
@@ -591,13 +591,13 @@ body #page-container .et_pb_section .et_pb_fullwidth_header_0 .et_pb_button_one.
 .et_pb_text_3.et_pb_text p { color: #bbb !important; }
 .et_pb_text_3 {
   max-width: 800px;
-  margin: 24px auto 0 !important;
+  margin: 16px auto 0 !important;
   text-align: center !important;
 }
 .et_pb_text_3 p {
   font-family: 'Nunito', Helvetica, Arial, sans-serif;
   font-size: 15px;
-  line-height: 1.9;
+  line-height: 1.7;
 }
 
 /* Section À propos - single column centered */
@@ -605,7 +605,7 @@ body #page-container .et_pb_section .et_pb_fullwidth_header_0 .et_pb_button_one.
   max-width: 900px !important;
 }
 .et_pb_row_3 .et_pb_column_5 {
-  padding: 40px 24px !important;
+  padding: 24px 24px !important;
   display: flex !important;
   flex-direction: column !important;
   justify-content: center !important;
@@ -613,12 +613,12 @@ body #page-container .et_pb_section .et_pb_fullwidth_header_0 .et_pb_button_one.
 }
 .et_pb_row_3 .et_pb_text_3 p {
   font-size: 15px !important;
-  line-height: 1.9 !important;
+  line-height: 1.7 !important;
   max-width: 800px !important;
   margin-left: auto !important;
   margin-right: auto !important;
 }
-.et_pb_image_3 { width: 100% !important; max-width: 350px !important; margin: 0 auto 10px !important; }
+.et_pb_image_3 { width: 100% !important; max-width: 300px !important; margin: 0 auto 4px !important; }
 
 /* Process section - Étude & Conseil */
 .et_pb_section_3 .et_pb_row_4 { max-width: 1140px !important; margin: 0 auto !important; }
