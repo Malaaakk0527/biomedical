@@ -105,7 +105,7 @@ body #page-container .et_pb_section .et_pb_fullwidth_header_0 .et_pb_button_one.
     align-self: stretch !important;
     flex: 1 !important;
     margin-left: auto !important;
-    padding-left: clamp(48px, 6vw, 100px) !important;
+    padding-left: clamp(80px, 10vw, 180px) !important;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     height: auto !important;
