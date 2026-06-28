@@ -91,7 +91,7 @@ body #page-container .et_pb_section .et_pb_fullwidth_header_0 .et_pb_button_one.
   .et_header_style_left #main-header .container.et_menu_container {
     display: flex !important;
     align-items: center !important;
-    min-height: 130px !important;
+    min-height: 180px !important;
     max-width: 1100px !important;
   }
   .et_header_style_left #main-header .logo_container {
@@ -105,7 +105,7 @@ body #page-container .et_pb_section .et_pb_fullwidth_header_0 .et_pb_button_one.
     align-self: stretch !important;
     flex: 1 !important;
     margin-left: auto !important;
-    padding-left: clamp(80px, 10vw, 180px) !important;
+    padding-left: clamp(100px, 12vw, 220px) !important;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     height: auto !important;
@@ -207,7 +207,7 @@ html.mc-theme-dark .mc-contact-modal__action { border-color: #333 !important; ba
     align-items: center !important;
     justify-content: space-between !important;
     flex-wrap: nowrap !important;
-    min-height: 170px !important;
+    min-height: 180px !important;
     width: 100% !important;
     padding: 10px 14px !important;
     gap: 8px !important;
