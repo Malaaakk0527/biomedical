@@ -600,41 +600,25 @@ body #page-container .et_pb_section .et_pb_fullwidth_header_0 .et_pb_button_one.
   line-height: 1.9;
 }
 
-/* Section À propos - two columns */
+/* Section À propos - single column centered */
 .et_pb_row_3.et_pb_row {
-  display: flex !important;
-  align-items: center !important;
-  max-width: 1140px !important;
+  max-width: 900px !important;
 }
 .et_pb_row_3 .et_pb_column_5 {
-  padding: 40px 8% 40px 4% !important;
+  padding: 40px 24px !important;
   display: flex !important;
   flex-direction: column !important;
   justify-content: center !important;
-  align-items: flex-start !important;
-}
-.et_pb_row_3 .et_pb_text_2 {
-  text-align: left !important;
-  align-self: flex-start !important;
-  width: 100% !important;
-}
-.et_pb_row_3 .et_pb_text_3 {
-  text-align: left !important;
-  margin-left: 0 !important;
-  margin-right: auto !important;
-  max-width: 600px !important;
+  align-items: center !important;
 }
 .et_pb_row_3 .et_pb_text_3 p {
-  font-size: 14px !important;
-  line-height: 1.8 !important;
+  font-size: 15px !important;
+  line-height: 1.9 !important;
+  max-width: 800px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
-.et_pb_row_3 .et_pb_column_25 {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  padding: 40px !important;
-}
-.et_pb_image_3 { width: 100% !important; max-width: 400px !important; margin: 0 auto !important; }
+.et_pb_image_3 { width: 100% !important; max-width: 350px !important; margin: 0 auto 10px !important; }
 
 /* Process section - Étude & Conseil */
 .et_pb_section_3 .et_pb_row_4 { max-width: 1140px !important; margin: 0 auto !important; }

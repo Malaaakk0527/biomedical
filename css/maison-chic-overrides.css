@@ -349,24 +349,9 @@ html.mc-theme-dark .mc-contact-modal__action { border-color: #333 !important; ba
   body #page-container .et_pb_fullwidth_header_0 .header-content h1.et_pb_module_header {
     font-size: 36px !important;
   }
-  /* À propos - empiler les colonnes */
-  .et_pb_row_3.et_pb_row {
-    flex-direction: column !important;
-  }
+  /* À propos - single column */
   .et_pb_row_3 .et_pb_column_5 {
-    padding: 40px 20px 20px !important;
-    align-items: center !important;
-    text-align: center !important;
-  }
-  .et_pb_row_3 .et_pb_text_2 {
-    text-align: center !important;
-  }
-  .et_pb_row_3 .et_pb_text_3 {
-    text-align: center !important;
-    max-width: 100% !important;
-  }
-  .et_pb_row_3 .et_pb_column_25 {
-    padding: 20px !important;
+    padding: 24px 16px !important;
   }
   .et_pb_image_3 {
     max-width: 250px !important;
