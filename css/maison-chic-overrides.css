@@ -76,8 +76,7 @@ body #page-container .et_pb_section .et_pb_fullwidth_header_0 .et_pb_button_one.
   #main-header #top-menu {
     display: flex !important;
     align-items: center !important;
-    justify-content: space-evenly !important;
-    width: 100% !important;
+    justify-content: flex-end !important;
     float: none !important;
   }
   #main-header #et_mobile_nav_menu { display: none !important; }
