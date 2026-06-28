@@ -339,6 +339,170 @@ html.mc-theme-dark .mc-contact-modal__action { border-color: #333 !important; ba
   .mc-signature__text { white-space: normal; max-width: 100%; }
 }
 
+/* ── Responsive général ── */
+@media (max-width: 980px) {
+  /* Hero */
+  body #page-container .et_pb_fullwidth_header_0 .et_pb_fullwidth_header_subhead {
+    font-size: 18px !important;
+    max-width: 90% !important;
+  }
+  body #page-container .et_pb_fullwidth_header_0 .header-content h1.et_pb_module_header {
+    font-size: 36px !important;
+  }
+  /* À propos - empiler les colonnes */
+  .et_pb_row_3.et_pb_row {
+    flex-direction: column !important;
+  }
+  .et_pb_row_3 .et_pb_column_5 {
+    padding: 40px 20px 20px !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  .et_pb_row_3 .et_pb_text_2 {
+    text-align: center !important;
+  }
+  .et_pb_row_3 .et_pb_text_3 {
+    text-align: center !important;
+    max-width: 100% !important;
+  }
+  .et_pb_row_3 .et_pb_column_25 {
+    padding: 20px !important;
+  }
+  .et_pb_image_3 {
+    max-width: 250px !important;
+  }
+  /* Étude & Conseil - empiler les colonnes */
+  .et_pb_section_3 .et_pb_row_4 {
+    flex-direction: column-reverse !important;
+  }
+  .et_pb_column_6 {
+    padding: 40px 24px !important;
+  }
+  .et_pb_column_7, .et_pb_image_4 {
+    min-height: 280px !important;
+  }
+  .et_pb_image_4 {
+    min-height: 280px !important;
+  }
+  /* Contact - empiler les colonnes */
+  #contact .et_pb_row_10 {
+    flex-direction: column !important;
+  }
+  #contact .et_pb_column_18,
+  #contact .et_pb_column_19 {
+    padding: 32px 20px !important;
+    border-left: none !important;
+  }
+  #contact .et_pb_column_19 {
+    border-top: 1px solid rgba(0,128,128,0.15) !important;
+  }
+  /* Titres sections */
+  .et_pb_text_0 h2,
+  .et_pb_text_2 h2,
+  .et_pb_text_6 h2,
+  .et_pb_text_20 h2 {
+    font-size: 28px !important;
+  }
+  .et_pb_text_8 h2, .et_pb_text_15 h2 {
+    font-size: 24px !important;
+  }
+  .et_pb_text_4 h3 {
+    font-size: 22px !important;
+  }
+  /* Espacement sections */
+  .et_pb_section_1.et_pb_section { padding-top: 60px !important; padding-bottom: 40px !important; }
+  .et_pb_section_2.et_pb_section { padding-top: 60px !important; }
+  .mc-categories-grid { margin-top: 20px !important; }
+  .et_pb_row_0 { padding-top: 40px !important; }
+}
+
+@media (max-width: 767px) {
+  /* Hero */
+  body #page-container .et_pb_fullwidth_header_0 .et_pb_fullwidth_header_subhead {
+    font-size: 15px !important;
+    line-height: 1.4 !important;
+  }
+  body #page-container .et_pb_fullwidth_header_0 .header-content h1.et_pb_module_header {
+    font-size: 28px !important;
+  }
+  /* Étude */
+  .et_pb_column_6::before {
+    font-size: 40px !important;
+    top: 8px !important;
+    right: 12px !important;
+  }
+  .et_pb_column_7, .et_pb_image_4 {
+    min-height: 220px !important;
+  }
+  /* Galerie */
+  .et_pb_image_0 .et_pb_image_wrap, .et_pb_image_0 img,
+  .et_pb_image_1 .et_pb_image_wrap, .et_pb_image_1 img,
+  .et_pb_image_2 .et_pb_image_wrap, .et_pb_image_2 img {
+    height: 200px !important;
+  }
+  /* Contact horaires */
+  .et_pb_text_9, .et_pb_text_10, .et_pb_text_11,
+  .et_pb_text_12, .et_pb_text_13, .et_pb_text_14 {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 4px !important;
+  }
+  .et_pb_text_9 p, .et_pb_text_10 p, .et_pb_text_11 p,
+  .et_pb_text_12 p, .et_pb_text_13 p, .et_pb_text_14 p {
+    text-align: left !important;
+  }
+  .et_pb_text_9 p span, .et_pb_text_10 p span, .et_pb_text_11 p span,
+  .et_pb_text_12 p span {
+    text-align: left !important;
+  }
+  /* Titres sections */
+  .et_pb_text_0 h2,
+  .et_pb_text_2 h2,
+  .et_pb_text_6 h2,
+  .et_pb_text_20 h2 {
+    font-size: 24px !important;
+  }
+  .et_pb_text_0 h2::before, .et_pb_text_0 h2::after,
+  .et_pb_text_2 h2::before, .et_pb_text_2 h2::after,
+  .et_pb_text_20 h2::before, .et_pb_text_20 h2::after {
+    font-size: 20px !important;
+    margin-left: 6px !important;
+    margin-right: 6px !important;
+  }
+  /* Espacement */
+  .et_pb_section_1.et_pb_section { padding-top: 40px !important; padding-bottom: 30px !important; }
+  .et_pb_section_2.et_pb_section { padding-top: 40px !important; }
+}
+
+@media (max-width: 480px) {
+  /* Hero */
+  body #page-container .et_pb_fullwidth_header_0 .et_pb_fullwidth_header_subhead {
+    font-size: 13px !important;
+  }
+  body #page-container .et_pb_fullwidth_header_0 .header-content h1.et_pb_module_header {
+    font-size: 22px !important;
+  }
+  /* Carousel dots */
+  .mc-carousel__dot {
+    width: 10px !important;
+    height: 10px !important;
+  }
+  .mc-carousel__dots {
+    bottom: 16px !important;
+    gap: 8px !important;
+  }
+  /* Étude */
+  .et_pb_column_6 {
+    padding: 24px 16px !important;
+  }
+  .et_pb_text_4 h3 {
+    font-size: 18px !important;
+  }
+  .et_pb_column_7, .et_pb_image_4 {
+    min-height: 180px !important;
+  }
+}
+
 /* Footer social icons - medical theme */
 #footer-bottom .et-social-icons li {
   display: inline-block;
