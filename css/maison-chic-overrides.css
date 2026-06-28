@@ -86,6 +86,7 @@ body #page-container .et_pb_section .et_pb_fullwidth_header_0 .et_pb_button_one.
     align-items: center !important;
     min-height: 110px !important;
     max-width: 1000px !important;
+    margin-left: 0 !important;
   }
   .et_header_style_left #main-header .logo_container {
     display: flex !important;
@@ -114,7 +115,7 @@ body #page-container .et_pb_section .et_pb_fullwidth_header_0 .et_pb_button_one.
     font-size: 14px !important;
     letter-spacing: 0.04em !important;
   }
-  .et_fixed_nav #main-header.et-fixed-header .container.et_menu_container { min-height: 90px !important; max-width: 1000px !important; }
+  .et_fixed_nav #main-header.et-fixed-header .container.et_menu_container { min-height: 90px !important; max-width: 1000px !important; margin-left: 0 !important; }
   .et_fixed_nav #main-header.et-fixed-header #et-top-navigation { padding-top: 0 !important; }
   .et_fixed_nav #main-header.et-fixed-header #et-top-navigation nav > ul > li > a {
     padding-top: 8px !important;
