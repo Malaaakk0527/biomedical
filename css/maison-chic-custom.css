@@ -161,16 +161,17 @@ html { scroll-behavior: smooth; }
 .logo_container { display: flex !important; align-items: center !important; height: 100% !important; }
 .logo_container a { display: flex; align-items: center; line-height: 0; }
 #logo {
-  max-height: none !important; height: 80px !important;
+  max-height: none !important; max-width: none !important;
+  height: 100px !important;
   width: auto !important; display: block !important;
   object-fit: contain !important;
   margin: 0 !important;
   transition: all var(--mc-transition);
 }
-.et_fixed_nav #logo { max-height: none !important; height: 72px !important; }
+.et_fixed_nav #logo { max-height: none !important; max-width: none !important; height: 90px !important; }
 @media (min-width: 981px) {
-  #logo { max-height: none !important; height: 160px !important; }
-  .et_fixed_nav #logo { max-height: none !important; height: 130px !important; }
+  #logo { max-height: none !important; max-width: none !important; height: 190px !important; }
+  .et_fixed_nav #logo { max-height: none !important; max-width: none !important; height: 150px !important; }
 }
 
 /* Hero section */
