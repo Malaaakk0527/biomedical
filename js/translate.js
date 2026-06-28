@@ -22,12 +22,12 @@
     const options = select.options;
     for (let i = 0; i < options.length; i++) {
       const opt = options[i];
-      if (opt.value === '') {
-        if (opt.textContent !== 'FR') opt.textContent = 'FR';
+      if (opt.value === '' && opt.textContent !== '\uD83C\uDF10 FR') {
+        opt.textContent = '\uD83C\uDF10 FR';
       } else if (opt.value === 'fr') {
-        if (opt.textContent !== 'FR') opt.textContent = 'FR';
+        if (opt.textContent !== '\uD83C\uDDEB\uD83C\uDDF7 FR') opt.textContent = '\uD83C\uDDEB\uD83C\uDDF7 FR';
       } else if (opt.value === 'ar') {
-        if (opt.textContent !== 'AR') opt.textContent = 'AR';
+        if (opt.textContent !== '\uD83C\uDDF8\uD83C\uDDE6 AR') opt.textContent = '\uD83C\uDDF8\uD83C\uDDE6 AR';
       }
     }
 
@@ -75,19 +75,12 @@
 
     // Find insertion points
     const nav = document.getElementById('et-top-navigation');
-    const toggle = document.querySelector('.mc-theme-toggle');
-
     if (nav) {
-      if (toggle) {
-        // Insert right before the theme toggle
-        nav.insertBefore(container, toggle);
+      const mobileMenu = document.getElementById('et_mobile_nav_menu');
+      if (mobileMenu) {
+        nav.insertBefore(container, mobileMenu);
       } else {
-        const mobileMenu = document.getElementById('et_mobile_nav_menu');
-        if (mobileMenu) {
-          nav.insertBefore(container, mobileMenu);
-        } else {
-          nav.appendChild(container);
-        }
+        nav.appendChild(container);
       }
     } else {
       const header = document.getElementById('main-header');
