@@ -6,7 +6,7 @@ body #page-container .et_pb_section .et_pb_fullwidth_header.et_pb_fullwidth_head
     180deg,
     rgba(0, 0, 0, 0.15) 0%,
     rgba(0, 0, 0, 0.55) 100%
-  ), url(../images2/acceuil1.jfif) !important;
+  ), url("../images 1/acceuil 1.jfif") !important;
   background-color: #0a1a1a !important;
   background-size: cover !important;
   background-position: center 30% !important;
@@ -44,7 +44,7 @@ body #page-container .et_pb_fullwidth_header_0 .header-content-container {
 
 /* Category pages hero background */
 body #page-container .et_pb_section .et_pb_fullwidth_header.et_pb_fullwidth_header_0 {
-  background-image: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%), url(../images2/acceuil1.jfif) !important;
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%), url("../images 1/acceuil 1.jfif") !important;
   background-color: #0a1a1a !important;
 }
 
