@@ -243,7 +243,7 @@ body #page-container .et_pb_section .et_pb_fullwidth_header_0 .et_pb_button_one.
 
 /* Sections background */
 .et_pb_section_1 { background-color: var(--mc-bg) !important; }
-.et_pb_section_2 { background-color: #0f1a1a !important; }
+.et_pb_section_2 { background-color: #0f1a1a !important; padding-top: 40px !important; padding-bottom: 20px !important; }
 .et_pb_section_5 { background-color: #0d1818 !important; }
 .et_pb_section_6 { background-color: var(--mc-bg) !important; }
 .et_pb_section_7 { background-color: #0f1a1a !important; }
