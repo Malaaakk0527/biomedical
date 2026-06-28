@@ -169,8 +169,8 @@ html { scroll-behavior: smooth; }
 }
 .et_fixed_nav #logo { max-height: none !important; height: 72px !important; }
 @media (min-width: 981px) {
-  #logo { max-height: none !important; height: 110px !important; }
-  .et_fixed_nav #logo { max-height: none !important; height: 90px !important; }
+  #logo { max-height: none !important; height: 160px !important; }
+  .et_fixed_nav #logo { max-height: none !important; height: 130px !important; }
 }
 
 /* Hero section */
