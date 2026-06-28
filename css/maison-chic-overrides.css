@@ -108,14 +108,15 @@ body #page-container .et_pb_section .et_pb_fullwidth_header_0 .et_pb_button_one.
     align-items: center !important;
     align-self: center !important;
     margin-left: auto !important;
+    flex: 1 !important;
     padding-left: clamp(24px, 4vw, 64px) !important;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     height: auto !important;
     gap: 10px !important;
   }
-  #main-header #top-menu > li { padding-right: 10px !important; }
-  #main-header #top-menu > li:last-child { padding-right: 0 !important; }
+  #main-header #top-menu { width: 100% !important; justify-content: space-evenly !important; }
+  #main-header #top-menu > li { padding-right: 4px !important; padding-left: 4px !important; }
   .et_header_style_left #main-header #et-top-navigation nav > ul > li > a {
     padding-top: 10px !important;
     padding-bottom: 10px !important;
@@ -190,7 +191,7 @@ html.mc-theme-dark .et_pb_text_inner, html.mc-theme-dark .et_pb_text_inner p,
 html.mc-theme-dark .et_pb_blurb_description { color: #bbb !important; }
 html.mc-theme-dark .et_pb_text_inner h2, html.mc-theme-dark .et_pb_text_inner h3,
 html.mc-theme-dark .et_pb_text_inner h4 { color: #eee !important; }
-html.mc-theme-dark #main-header { background-color: #001a33 !important; }
+html.mc-theme-dark #main-header { background-color: #005c5c !important; }
 html.mc-theme-dark .mc-lightbox__panel, html.mc-theme-dark .mc-contact-modal__panel { background: #1a1a28 !important; }
 html.mc-theme-dark .mc-contact-modal__action { border-color: #333 !important; background: #242436 !important; }
 

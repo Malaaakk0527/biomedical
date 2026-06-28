@@ -1,7 +1,7 @@
 /* MOBIMED - Design professionnel médical */
 
 :root {
-  --mc-primary: #003366;
+  --mc-primary: #008080;
   --mc-primary-light: #1A4D7A;
   --mc-primary-hover: #002244;
   --mc-primary-dark: #001F3F;
@@ -1317,7 +1317,7 @@ html.mc-theme-dark .mc-lightbox__desc, html.mc-theme-dark .mc-contact-modal__hin
 html.mc-theme-dark .mc-contact-modal__action { color: #bbb !important; }
 html.mc-theme-dark .mc-contact-modal__action { border-color: #333 !important; background: #242436 !important; }
 html.mc-theme-dark .mc-contact-modal__action:hover { border-color: var(--mc-primary-light) !important; }
-html.mc-theme-dark #main-header { background-color: #001a33 !important; }
+html.mc-theme-dark #main-header { background-color: #005c5c !important; }
 html.mc-theme-dark .et_pb_section_1 { background-color: #0d0d14 !important; }
 
 html.mc-theme-dark .et_pb_section_6 { background-color: #0d0d14 !important; }
