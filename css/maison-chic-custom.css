@@ -1338,6 +1338,7 @@ body.mc-contact-open { overflow: hidden; }
   display: inline-flex; align-items: center; justify-content: center;
   position: relative; z-index: 1000000;
   align-self: center; height: 34px !important;
+  margin-left: auto !important;
 }
 #google_translate_element, .goog-te-gadget, .goog-te-gadget > div {
   display: inline-flex !important; align-items: center !important;
