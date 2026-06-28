@@ -1,5 +1,4 @@
 (() => {
-  // Callback function for Google Translate
   window.googleTranslateElementInit = () => {
     new google.translate.TranslateElement({
       pageLanguage: 'fr',
@@ -10,11 +9,15 @@
 
   let observer = null;
 
+  const FLAGS = {
+    fr: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600"%3E%3Crect width="300" height="600" fill="%23002395"/%3E%3Crect x="300" width="300" height="600" fill="%23fff"/%3E%3Crect x="600" width="300" height="600" fill="%23ED2939"/%3E%3C/svg%3E',
+    ar: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600"%3E%3Crect width="900" height="600" fill="%23006C35"/%3E%3Ctext x="450" y="350" fill="white" font-family="Arial" font-size="80" text-anchor="middle"%3Eلا إله إلا الله%3C/text%3E%3Ctext x="450" y="450" fill="white" font-family="Arial" font-size="80" text-anchor="middle"%3Eمحمد رسول الله%3C/text%3E%3C/svg%3E'
+  };
+
   const customizeSelect = () => {
     const select = document.querySelector('.goog-te-combo');
     if (!select) return;
 
-    // Temporarily disconnect observer to avoid infinite loops during DOM modification
     if (observer) {
       observer.disconnect();
     }
@@ -22,19 +25,37 @@
     const options = select.options;
     for (let i = 0; i < options.length; i++) {
       const opt = options[i];
-      if (opt.value === '' && opt.textContent !== '\uD83C\uDF10 FR') {
-        opt.textContent = '\uD83C\uDF10 FR';
-      } else if (opt.value === 'fr') {
-        if (opt.textContent !== '\uD83C\uDDEB\uD83C\uDDF7 FR') opt.textContent = '\uD83C\uDDEB\uD83C\uDDF7 FR';
-      } else if (opt.value === 'ar') {
-        if (opt.textContent !== '\uD83C\uDDF8\uD83C\uDDE6 AR') opt.textContent = '\uD83C\uDDF8\uD83C\uDDE6 AR';
+      if (opt.value === '' && opt.textContent !== 'Langue') {
+        opt.textContent = 'Langue';
+      } else if (opt.value === 'fr' && opt.textContent !== 'Fran\u00e7ais') {
+        opt.textContent = 'Fran\u00e7ais';
+      } else if (opt.value === 'ar' && opt.textContent !== '\u0627\u0644\u0639\u0631\u0628\u064a\u0629') {
+        opt.textContent = '\u0627\u0644\u0639\u0631\u0628\u064a\u0629';
       }
     }
 
-    // Reconnect observer
+    updateFlag(select.value);
+
     const targetNode = document.getElementById('google_translate_element');
     if (targetNode && observer) {
       observer.observe(targetNode, { childList: true, subtree: true });
+    }
+  };
+
+  const updateFlag = (lang) => {
+    const container = document.querySelector('.mc-translate-container');
+    if (!container) return;
+    let indicator = container.querySelector('.mc-flag-icon');
+    if (!indicator) {
+      indicator = document.createElement('span');
+      indicator.className = 'mc-flag-icon';
+      container.appendChild(indicator);
+    }
+    if (lang && FLAGS[lang]) {
+      indicator.style.backgroundImage = 'url("' + FLAGS[lang] + '")';
+      indicator.style.display = '';
+    } else {
+      indicator.style.display = 'none';
     }
   };
 
@@ -42,7 +63,6 @@
     const targetNode = document.getElementById('google_translate_element');
     if (!targetNode) return;
 
-    // Run once initially in case it's already rendered
     customizeSelect();
 
     observer = new MutationObserver(() => {
@@ -50,8 +70,7 @@
     });
 
     observer.observe(targetNode, { childList: true, subtree: true });
-    
-    // Also watch for user selecting a language to re-run customization
+
     targetNode.addEventListener('change', (e) => {
       if (e.target && e.target.classList.contains('goog-te-combo')) {
         setTimeout(customizeSelect, 50);
@@ -60,20 +79,16 @@
   };
 
   const init = () => {
-    // Check if element already exists
     if (document.querySelector('.mc-translate-container')) return;
 
-    // Create wrapper div
     const container = document.createElement('div');
     container.className = 'mc-translate-container';
-    
-    // Create inner element where google will render the select dropdown
+
     const element = document.createElement('div');
     element.id = 'google_translate_element';
-    
+
     container.appendChild(element);
 
-    // Find insertion points
     const nav = document.getElementById('et-top-navigation');
     if (nav) {
       const mobileMenu = document.getElementById('et_mobile_nav_menu');
@@ -91,16 +106,13 @@
       }
     }
 
-    // Load Google Translate script
     const script = document.createElement('script');
     script.type = 'text/javascript';
     script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
     document.body.appendChild(script);
 
-    // Start observing translation element for customization
     startObserver();
 
-    // Watch for when Google Translate adds the bar at the top, and hide it
     const style = document.createElement('style');
     style.innerHTML = `
       body { top: 0 !important; }
