@@ -91,7 +91,7 @@ body #page-container .et_pb_section .et_pb_fullwidth_header_0 .et_pb_button_one.
   .et_header_style_left #main-header .container.et_menu_container {
     display: flex !important;
     align-items: center !important;
-    min-height: 100px !important;
+    min-height: 130px !important;
   }
   .et_header_style_left #main-header .logo_container {
     display: flex !important;
@@ -125,7 +125,7 @@ body #page-container .et_pb_section .et_pb_fullwidth_header_0 .et_pb_button_one.
     margin: 0 0 0 4px !important;
     vertical-align: middle !important;
   }
-  .et_fixed_nav #main-header.et-fixed-header .container.et_menu_container { min-height: 56px !important; }
+  .et_fixed_nav #main-header.et-fixed-header .container.et_menu_container { min-height: 110px !important; }
   .et_fixed_nav #main-header.et-fixed-header #et-top-navigation { padding-top: 0 !important; }
   .et_fixed_nav #main-header.et-fixed-header #et-top-navigation nav > ul > li > a {
     padding-top: 8px !important;
@@ -206,7 +206,7 @@ html.mc-theme-dark .mc-contact-modal__action { border-color: #333 !important; ba
     align-items: center !important;
     justify-content: space-between !important;
     flex-wrap: nowrap !important;
-    min-height: 68px !important;
+    min-height: 90px !important;
     width: 100% !important;
     padding: 10px 14px !important;
     gap: 8px !important;
@@ -220,7 +220,7 @@ html.mc-theme-dark .mc-contact-modal__action { border-color: #333 !important; ba
   }
   #main-header #logo {
     max-height: none !important;
-    height: 60px !important;
+    height: 80px !important;
     width: auto !important;
     max-width: 80% !important;
     object-fit: contain !important;
