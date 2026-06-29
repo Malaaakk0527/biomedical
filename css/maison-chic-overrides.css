@@ -67,43 +67,52 @@ body #page-container .et_pb_section .et_pb_fullwidth_header_0 .et_pb_button_one.
 #et_mobile_nav_menu { flex-shrink: 0; }
 
 @media (min-width: 981px) {
+  #main-header #et_mobile_nav_menu { display: none !important; }
+  .et_header_style_left #main-header .container.et_menu_container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    min-height: 110px !important;
+    max-width: 1280px !important;
+    width: 94% !important;
+    margin: 0 auto !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+  .et_header_style_left #main-header .logo_container {
+    display: flex !important;
+    align-items: center !important;
+    flex: 0 0 auto !important;
+    margin-right: clamp(64px, 11vw, 200px) !important;
+  }
+  .et_header_style_left #main-header #et-top-navigation {
+    display: flex !important;
+    align-items: center !important;
+    align-self: stretch !important;
+    flex: 1 1 auto !important;
+    margin-left: 0 !important;
+    padding-left: clamp(32px, 5vw, 80px) !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    height: auto !important;
+    gap: 20px !important;
+    justify-content: flex-end !important;
+  }
   #main-header #top-menu-nav {
     display: flex !important;
     align-items: center !important;
-    flex: 1 !important;
+    flex: 1 1 auto !important;
     float: none !important;
+    justify-content: flex-start !important;
+    min-width: 0 !important;
   }
   #main-header #top-menu {
     display: flex !important;
     align-items: center !important;
     justify-content: flex-start !important;
     float: none !important;
-    gap: clamp(18px, 2.2vw, 32px) !important;
-  }
-  #main-header #et_mobile_nav_menu { display: none !important; }
-  .et_header_style_left #main-header .container.et_menu_container {
-    display: flex !important;
-    align-items: center !important;
-    min-height: 110px !important;
-    max-width: 1000px !important;
-    margin-left: 0 !important;
-  }
-  .et_header_style_left #main-header .logo_container {
-    display: flex !important;
-    align-items: center !important;
-    flex-shrink: 0 !important;
-  }
-  .et_header_style_left #main-header #et-top-navigation {
-    display: flex !important;
-    align-items: center !important;
-    align-self: stretch !important;
-    flex: 1 !important;
-    margin-left: auto !important;
-    padding-left: clamp(120px, 14vw, 260px) !important;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-    height: auto !important;
-    gap: 12px !important;
+    gap: clamp(24px, 3vw, 42px) !important;
+    width: 100% !important;
   }
   #main-header #top-menu > li {
     padding: 0 !important;
@@ -113,18 +122,23 @@ body #page-container .et_pb_section .et_pb_fullwidth_header_0 .et_pb_button_one.
   .et_header_style_left #main-header #et-top-navigation nav > ul > li > a {
     display: inline-block !important;
     position: relative !important;
-    padding: 10px clamp(10px, 1.2vw, 16px) !important;
-    font-size: 14px !important;
-    letter-spacing: 0.04em !important;
+    padding: 10px clamp(12px, 1.4vw, 20px) !important;
+    font-size: 15px !important;
+    letter-spacing: 0.06em !important;
     white-space: nowrap !important;
   }
-  .et_fixed_nav #main-header.et-fixed-header .container.et_menu_container { min-height: 90px !important; max-width: 1000px !important; margin-left: 0 !important; }
+  .et_fixed_nav #main-header.et-fixed-header .container.et_menu_container {
+    min-height: 90px !important;
+    max-width: 1280px !important;
+    width: 94% !important;
+    margin: 0 auto !important;
+  }
   .et_fixed_nav #main-header.et-fixed-header #et-top-navigation { padding-top: 0 !important; }
   .et_fixed_nav #main-header.et-fixed-header #et-top-navigation nav > ul > li > a {
     padding-top: 8px !important;
     padding-bottom: 8px !important;
-    padding-left: clamp(10px, 1.2vw, 16px) !important;
-    padding-right: clamp(10px, 1.2vw, 16px) !important;
+    padding-left: clamp(12px, 1.4vw, 20px) !important;
+    padding-right: clamp(12px, 1.4vw, 20px) !important;
   }
   #main-header #top-menu li a::after {
     content: '';
