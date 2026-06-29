@@ -62,6 +62,7 @@ body #page-container .et_pb_section .et_pb_fullwidth_header_0 .et_pb_button_one.
   justify-content: flex-end !important;
   gap: 8px !important;
   float: none !important;
+  padding-top: 0 !important;
 }
 
 #et_mobile_nav_menu { flex-shrink: 0; }
@@ -80,18 +81,25 @@ body #page-container .et_pb_section .et_pb_fullwidth_header_0 .et_pb_button_one.
     padding-right: 8px !important;
   }
   .et_header_style_left #main-header .logo_container {
+    position: relative !important;
     display: flex !important;
     align-items: center !important;
     flex: 0 0 auto !important;
-    margin-right: clamp(64px, 11vw, 200px) !important;
+    width: auto !important;
+    max-width: none !important;
+    height: auto !important;
+    margin-right: clamp(32px, 5vw, 80px) !important;
+    z-index: 2 !important;
   }
+  .et_header_style_left #main-header .logo_helper { display: none !important; }
   .et_header_style_left #main-header #et-top-navigation {
     display: flex !important;
     align-items: center !important;
     align-self: stretch !important;
     flex: 1 1 auto !important;
+    float: none !important;
     margin-left: 0 !important;
-    padding-left: clamp(32px, 5vw, 80px) !important;
+    padding-left: 0 !important;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     height: auto !important;
@@ -132,6 +140,11 @@ body #page-container .et_pb_section .et_pb_fullwidth_header_0 .et_pb_button_one.
     max-width: 1280px !important;
     width: 94% !important;
     margin: 0 auto !important;
+  }
+  .et_fixed_nav #main-header.et-fixed-header .logo_container {
+    position: relative !important;
+    width: auto !important;
+    height: auto !important;
   }
   .et_fixed_nav #main-header.et-fixed-header #et-top-navigation { padding-top: 0 !important; }
   .et_fixed_nav #main-header.et-fixed-header #et-top-navigation nav > ul > li > a {
